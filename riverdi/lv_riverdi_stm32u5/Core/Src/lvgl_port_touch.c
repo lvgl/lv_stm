@@ -17,7 +17,7 @@ static volatile uint8_t touch_irq = 0;
  **********************/
 
 static void
-lvgl_touchscreen_read (lv_indev_drv_t *indev, lv_indev_data_t *data);
+lvgl_touchscreen_read (lv_indev_t *indev, lv_indev_data_t *data);
 
 /**********************
  *   GLOBAL FUNCTIONS
@@ -26,8 +26,6 @@ lvgl_touchscreen_read (lv_indev_drv_t *indev, lv_indev_data_t *data);
 void
 lvgl_touchscreen_init (void)
 {
-  static lv_indev_drv_t indev_drv;
-
   /* 'i2c1' bus and touchscreen reset pin are already configure by CubeMX,
    *  here we just need to reset touchscreen controller */
   HAL_GPIO_WritePin(CTP_RST_GPIO_Port, CTP_RST_Pin, GPIO_PIN_SET);
@@ -38,12 +36,10 @@ lvgl_touchscreen_init (void)
   HAL_Delay(10);
 
   /* basic LVGL driver initialization */
-  lv_indev_drv_init(&indev_drv);
-  indev_drv.type = LV_INDEV_TYPE_POINTER;
-  indev_drv.read_cb = lvgl_touchscreen_read;
+  lv_indev_t * indev = lv_indev_create();
+  lv_indev_set_type(indev, LV_INDEV_TYPE_POINTER);
+  lv_indev_set_read_cb(indev, lvgl_touchscreen_read);
 
-  /* register the driver in LVGL */
-  lv_indev_drv_register(&indev_drv);
 }
 
 /**********************
@@ -51,7 +47,7 @@ lvgl_touchscreen_init (void)
  **********************/
 
 static void
-lvgl_touchscreen_read (lv_indev_drv_t  *indev,
+lvgl_touchscreen_read (lv_indev_t      *indev,
                        lv_indev_data_t *data)
 {
   static lv_coord_t last_x = 0;
