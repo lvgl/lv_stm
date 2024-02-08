@@ -2,7 +2,7 @@
 
 This repository contains the __Light and Versatile Graphics Library (LVGL)__ port for the __5-inch Riverdi STM32 Embedded Displays__ with *STM32U599NJH6Q or STM32U5A9NJH6Q* MCUs. It's ready-to-use project template which you can easily import into *STM32CubeIDE* and *STM32CubeMX* (to reconfigure selected peripherals). This project uses latest stable LVGL release (v8.3.9). For more info about LVGL (docs, API, tutorials) please visit [*https://lvgl.io/*](https://lvgl.io/) and [*https://github.com/lvgl/lvgl*](https://github.com/lvgl/lvgl)
 
-![img1](/Docs/img_1.png)
+![img1](/riverdi/lv_riverdi_stm32u5/Docs/img_1.png)
 
 This repository supports all configuration of 5-inch *Riverdi STM32 Embedded Displays*:
 
@@ -45,7 +45,7 @@ Main features of the 5-inch __Riverdi STM32 Embedded Display__:
 * TouchGFX and LVGL direct support
 * Power Supply: 6V-48V
 
-![img2](/Docs/img_2.png)
+![img2](/riverdi/lv_riverdi_stm32u5/Docs/img_2.png)
 
 * __RS485__
 * __Expansion connector__ - the board offers additional and independent GPIOs over a 40pin, 1.27mm female socket. It provides direct access to the below GPIOs of MCU STM32U599NJH6Q, that makes it possible to be easily extended by an addon board for specific application (2x I2C, UART, USART, SPI, USB, 7x PWMs, 1x DAC, 2x ADCs)
@@ -59,7 +59,7 @@ Main features of the 5-inch __Riverdi STM32 Embedded Display__:
 
 Have a look what you will get when you will order a sample of STM32 Embedded Display:
 
-[![img3](/Docs/img_3.png)](https://www.youtube.com/watch?v=UwMa3z_OOmQ)
+[![img3](/riverdi/lv_riverdi_stm32u5/Docs/img_3.png)](https://www.youtube.com/watch?v=UwMa3z_OOmQ)
 
 ## How to import this project to STM32CubeIDE:
 
