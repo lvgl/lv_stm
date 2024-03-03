@@ -1,3 +1,6 @@
 [submodule "riverdi/lv_riverdi_stm32u5/Middlewares/Third_Party/LVGL/lvgl"]
 	path = riverdi/lv_riverdi_stm32u5/Middlewares/Third_Party/LVGL/lvgl
 	url = https://github.com/lvgl/lvgl.git
+[submodule "lv_port_stm32mp135f_disco_bm/Middlewares/Third_Party/lvgl"]
+	path = lv_port_stm32mp135f_disco_bm/Middlewares/Third_Party/lvgl
+	url = https://github.com/lvgl/lvgl.git
