@@ -14,7 +14,7 @@ The [STM32MP135F-DK](https://www.st.com/en/evaluation-tools/stm32mp135f-dk.html)
 * On-board STLINK-V3E debugger/programmer with USB re-enumeration capability: mass storage, Virtual COM port, and debug port
 * Full mainline open-source Linux® STM32 MPU OpenSTLinux Distribution (such as STM32MP1Starter) software and examples
 * Support of several Integrated Development Environments (IDEs) including [STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)
-* [Bare metal support for RTOS (Microsoft® Azure®)](https://www.st.com/en/embedded-software/stm32cubemp13.html)
+* [Bare metal support for RTOS (Eclipse ThreadX)](https://www.st.com/en/embedded-software/stm32cubemp13.html)
 
 The project was created with STM32CubeIDE.
 
