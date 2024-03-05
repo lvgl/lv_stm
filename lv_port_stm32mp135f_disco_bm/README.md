@@ -1,7 +1,6 @@
 # LVGL ported to the STM32MP135F-DK Bare Metal
 
 The [STM32MP135F-DK](https://www.st.com/en/evaluation-tools/stm32mp135f-dk.html) board is an affordable development board with:
-The [STM32MP135F-DK](https://www.st.com/en/evaluation-tools/stm32mp135f-dk.html) board is an affordable development board with:
 * 4.3" 480×272 pixels LCD display module with capacitive touch panel and RGB interface
 * STM32MP135FAF7 MPU with an Arm® Cortex®‑A7 32-bit processor at 1 GHz, in a TFBGA320 package
 * 4-Gbit DDR3L, 16 bits, 533 MHz
@@ -14,8 +13,8 @@ The [STM32MP135F-DK](https://www.st.com/en/evaluation-tools/stm32mp135f-dk.html)
 * On-board current measurement
 * On-board STLINK-V3E debugger/programmer with USB re-enumeration capability: mass storage, Virtual COM port, and debug port
 * Full mainline open-source Linux® STM32 MPU OpenSTLinux Distribution (such as STM32MP1Starter) software and examples
-* Support of several Integrated Development Environments (IDEs) including STM32CubeIDE
-* Bare metal support for RTOS (Microsoft® Azure®)
+* Support of several Integrated Development Environments (IDEs) including [STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)
+* [Bare metal support for RTOS (Microsoft® Azure®)](https://www.st.com/en/embedded-software/stm32cubemp13.html)
 
 The project was created with STM32CubeIDE.
 
